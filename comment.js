@@ -44,4 +44,9 @@ document.querySelector("#form").addEventListener("submit", (event) => {
   `;
   displayArea.style = displayCommentStyle;
   event.preventDefault();
+  document.getElementById("form").reset();
+  
+
 });
+
+
