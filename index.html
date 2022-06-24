@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="comment.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <section>
-      <form id="form">
-        <article>
-          <div class="field">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your firstname"
-            />
-          </div>
-          <div class="field">
-            <label for="email">Email:</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Enter your email address"
-            />
-          </div>
-        </article>
+        <form id="form">
+            <article>
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your firstname" />
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" />
+                </div>
+            </article>
 
-        <label for="comment_box" class="comment_box"
-          >Please Write Some Text in the comment box:</label
-        >
-        <br />
-        <div class="container">
-          <textarea
-            id="comment"
-            name="comment"
-            placeholder="Start Typing here..."
-          ></textarea>
-          <div id="countText">Total words: 0/140</div>
-        </div>
-        <input type="submit" value="Submit" class="submit_button" />
-      </form>
-      <div id="displayComment"></div>
+            <label for="comment_box" class="comment_box">Please Write Some Text in the comment box:</label>
+            <br />
+            <div class="container">
+                <textarea id="comment" name="comment" placeholder="Start Typing here..."></textarea>
+                <div id="countText">Total words: 0/140</div>
+            </div>
+            <input type="submit" value="Submit" class="submit_button" />
+        </form>
+        <div id="displayComment"></div>
     </section>
 
     <script src="comment.js" async defer></script>
-  </body>
+</body>
+
 </html>

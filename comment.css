@@ -12,18 +12,17 @@ section {
   padding: 3rem;
 }
 article {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-    
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 label {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 input {
-    border: none;
-    padding: 0.3rem;
+  border: none;
+  padding: 0.3rem;
 }
 label.comment_box {
   margin: 5px;
@@ -60,7 +59,7 @@ textarea {
   padding: 1rem;
   line-height: 0.5rem;
   letter-spacing: 0.1rem;
-  background: #BC8F8F;
+  background: #bc8f8f;
   color: #0e101a;
   border: none;
   border-radius: 0.5rem;
@@ -72,16 +71,16 @@ textarea {
   text-align: right;
 }
 small {
-    color: #20B2AA;
-    font-style: oblique;
+  color: #20b2aa;
+  font-style: oblique;
 }
 
 @media screen and (max-width: 768px) {
-    article {
-        flex-direction: column;
-        justify-content: space-between;
-        height: 7.5vh;
-    }
+  article {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.5vh;
+  }
   label.comment_box {
     font-size: 1.3rem;
     padding: 1rem;
