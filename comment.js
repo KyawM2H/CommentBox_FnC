@@ -22,11 +22,15 @@ function getWordCount(str) {
   return str.split(" ").filter((word) => word !== "").length;
 }
 
+
+  
 document.querySelector("#form").addEventListener("submit", (event) => {
   const displayArea = document.getElementById("displayComment");
+  const inputField = document.querySelector('#name');
   let textLn = textArea.value;
-  displayArea.innerText = textLn;
-
+  let inputNameValue = inputField.value;
+  displayArea.innerHTML = `${textLn}  __by <small>${inputNameValue}</small>`;
+  
   let displayCommentStyle = `
   display: block;
   width: fit-content;
@@ -41,6 +45,7 @@ document.querySelector("#form").addEventListener("submit", (event) => {
   padding: 15px;
   `;
   displayArea.style = displayCommentStyle;
-
   event.preventDefault();
 });
+
+
