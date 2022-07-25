@@ -45,6 +45,9 @@ document.querySelector("#form").addEventListener("submit", (event) => {
   displayArea.style = displayCommentStyle;
   event.preventDefault();
   document.getElementById("form").reset();
+  document.getElementById("countText").innerHTML =
+    "Total words: " + 0 + "/" + WORD_LIMIT;
+  
   
 
 });
