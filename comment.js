@@ -10,7 +10,7 @@ textArea.addEventListener("input", () => {
 textArea.addEventListener("keydown", function (e) {
   let textLn = textArea.value;
   if (getWordCount(textLn) > WORD_LIMIT && e.code !== "Backspace") {
-    textArea.style.border = "6px double orange";
+    textArea.style.border = "16px double #cd0000";
     e.preventDefault();
     return;
   } else {
@@ -19,7 +19,7 @@ textArea.addEventListener("keydown", function (e) {
 });
 
 function getWordCount(str) {
-  return str.split(" ").filter((word) => word !== "").length;
+  return str.split("").filter((word) => word !== "").length;
 }
 
 document.querySelector("#form").addEventListener("submit", (event) => {
@@ -48,8 +48,6 @@ document.querySelector("#form").addEventListener("submit", (event) => {
   document.getElementById("countText").innerHTML =
     "Total words: " + 0 + "/" + WORD_LIMIT;
   
-  
-
 });
 
 
